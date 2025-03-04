@@ -1,12 +1,14 @@
 import React, { useContext } from "react";
 import { MyContext } from "../components/tokenContext";
 
+import { BannerAPI } from "../components/bannerApi";
+
 function Migracao() {
 	const token = useContext(MyContext);
 	return (
 		<>
 			<div>
-				Migracao
+				<BannerAPI token={token}/>
 			</div>
 		</>
 	)
