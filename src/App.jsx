@@ -2,17 +2,24 @@ import './App.css'
 // import React, { useContext } from "react";
 // import { MyContext } from "./components/tokenContext";
 
-import { Form } from './components/form';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Home from './pages/Home';
+import Migracao from './pages/Migracao';
+
 import './global.css'
 
 function App() {
   // const token = useContext(MyContext);
   return (
     <>
-			<div className="container">
-      	<Form/>
-				{/* {token.token_origin} */}
-			</div>
+			<Router>
+				<div>
+					<Routes>
+						<Route path="/" element={<Home />} />
+						<Route path="/migracao" element={<Migracao />} />
+					</Routes>
+				</div>
+			</Router>
     </>
   )
 }

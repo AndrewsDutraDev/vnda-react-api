@@ -8,7 +8,7 @@ export function Form(){
   return(
 		<>
 			<div className={styles.form}>
-				<form action="migracao" method="POST">
+				<form action="/migracao" method="POST">
 					<fieldset>
 						<label htmlFor="token_origin">
 							TOKEN DA LOJA DE ORIGEM
