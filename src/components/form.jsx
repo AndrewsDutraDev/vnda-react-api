@@ -8,7 +8,7 @@ export function Form(){
   return(
 		<>
 			<div className={styles.form}>
-				<form action="/migracao" method="POST">
+				<form method="POST">
 					<fieldset>
 						<label htmlFor="token_origin">
 							TOKEN DA LOJA DE ORIGEM
@@ -36,7 +36,7 @@ export function Form(){
 						</label>
 						<input type="text" id="store_target" onChange={(event) => token.setStoreTarget(event.target.value)} value={token.store_target}/>
 					</fieldset>
-					<button type="submit" className="button-default">Salvar</button>
+					<a href="migracao" className="button-default">Salvar</a>
 				</form>
 			</div>
 		</>

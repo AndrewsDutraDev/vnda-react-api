@@ -5,7 +5,7 @@ function Migracao() {
 	const token = useContext(MyContext);
 	return (
 		<>
-			<div className="container">
+			<div>
 				Migracao
 			</div>
 		</>
