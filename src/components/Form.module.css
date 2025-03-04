@@ -1,0 +1,33 @@
+.form{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+
+	background-color: var(--white);
+	padding: 4rem 5rem;
+	border-radius: 4px;
+	box-shadow: 0 0 5px #0003;
+	overflow: hidden;
+	margin-bottom: 6rem;
+
+	min-width: 60vw;
+}
+
+.form fieldset{
+	display: flex;
+	align-items: flex-start;
+	flex-direction: column;
+	margin-bottom: 15px;
+}
+
+.form input{
+	height: 45px;
+	padding: 1rem;
+	border-radius: 8px;
+	border: 1px solid #b6b9d0;
+	outline: none;
+	font-size: 1.2rem;
+	width: 100%;
+	color: var(--blue-900);
+}
